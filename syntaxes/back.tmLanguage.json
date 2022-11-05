@@ -1,0 +1,54 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Back",
+	"patterns": [
+		{ "include": "#comments" },
+		{ "include": "#strings" },
+		{ "include": "#keywords" },
+		{ "include": "#built-in-functions" },
+		{ "include": "#operators" }
+	],
+	"repository": {
+		"comments": {
+			"name": "comment.block.back",
+			"begin": "#",
+			"end": "\\n"
+		},
+		"strings": {
+			"name": "string.quoted.double.back",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.back",
+					"match": "\\\\."
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.back",
+					"match": "\\b(if|else|while|proc|begin|end|mem)\\b"
+				}
+			]
+		},
+		"built-in-functions": {
+			"match": "\\b(dup|rot|swap|drop|syscall[0-6]|divmod|\\.|!|@)\\b",
+			"name": "support.function.builtin.back"
+		},
+		"operators": {
+			"patterns": [
+				{
+					"match": "(==|<>|<=|>=|<(?!<)|>(?!>))",
+					"name": "keyword.operator.comparison.go"
+				},
+				{
+					"match": "(\\+|\\-|\\*|/|%)",
+					"name": "keyword.operator.arithmetic.go"
+				}
+			]
+		}
+	},
+	"scopeName": "source.back"
+}

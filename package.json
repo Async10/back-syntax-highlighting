@@ -1,0 +1,25 @@
+{
+  "name": "back-syntax-highlighting",
+  "displayName": "Back Syntax Highlighting",
+  "description": "Syntax highlighting for Back programming language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "back",
+      "aliases": ["Back", "back"],
+      "extensions": [".back"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "back",
+      "scopeName": "source.back",
+      "path": "./syntaxes/back.tmLanguage.json"
+    }]
+  }
+}
