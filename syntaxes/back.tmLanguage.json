@@ -20,16 +20,16 @@
 			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.back",
-					"match": "\\\\."
+					"match": "\\\\.",
+					"name": "constant.character.escape.back"
 				}
 			]
 		},
 		"keywords": {
 			"patterns": [
 				{
-					"name": "keyword.control.back",
-					"match": "\\b(if|else|while|proc|begin|end|mem)\\b"
+					"match": "\\b(if|else|while|proc|begin|end|mem)\\b",
+					"name": "keyword.control.back"
 				}
 			]
 		},
@@ -41,11 +41,15 @@
 			"patterns": [
 				{
 					"match": "(==|<>|<=|>=|<(?!<)|>(?!>))",
-					"name": "keyword.operator.comparison.go"
+					"name": "keyword.operator.comparison.back"
 				},
 				{
 					"match": "(\\+|\\-|\\*|/|%)",
-					"name": "keyword.operator.arithmetic.go"
+					"name": "keyword.operator.arithmetic.back"
+				},
+				{
+					"match": "\\b(and|or|rshift|lshift)\\b",
+					"name": "keyword.operator.bitwise.back"
 				}
 			]
 		}
