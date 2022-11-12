@@ -40,11 +40,11 @@
 		"operators": {
 			"patterns": [
 				{
-					"match": "\\b(==|<>|<=|>=|<(?!<)|>(?!>))\\b",
+					"match": "(==|<>|<=|>=|<(?!<)|>(?!>))",
 					"name": "keyword.operator.comparison.back"
 				},
 				{
-					"match": "\\b(\\+|\\-|\\*|/|%)\\b",
+					"match": "(\\+|\\-|\\*|/|%)",
 					"name": "keyword.operator.arithmetic.back"
 				},
 				{
