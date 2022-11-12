@@ -34,17 +34,17 @@
 			]
 		},
 		"built-in-functions": {
-			"match": "\\b(dup|rot|swap|drop|syscall[0-6]|divmod|\\.|!|@)\\b",
+			"match": "\\b(dup|rot|swap|drop|over|emit|syscall[0-6]|divmod|\\.|!|@)\\b",
 			"name": "support.function.builtin.back"
 		},
 		"operators": {
 			"patterns": [
 				{
-					"match": "(==|<>|<=|>=|<(?!<)|>(?!>))",
+					"match": "\\b(==|<>|<=|>=|<(?!<)|>(?!>))\\b",
 					"name": "keyword.operator.comparison.back"
 				},
 				{
-					"match": "(\\+|\\-|\\*|/|%)",
+					"match": "\\b(\\+|\\-|\\*|/|%)\\b",
 					"name": "keyword.operator.arithmetic.back"
 				},
 				{
